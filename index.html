@@ -30,7 +30,7 @@
 			box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 		}
 		li {
-			margin-bottom: 20px;
+			margin-bottom: 30px;
 		}
 		li strong {
 			color: #2c3e50;
@@ -40,6 +40,18 @@
 			padding: 10px;
 			border-left: 4px solid #4CAF50;
 			border-radius: 4px;
+		}
+		/* 🎨 Estilo para las imágenes */
+		.respuesta-img {
+			display: block;
+			margin: 15px auto; /* centra la imagen */
+			max-width: 100%;   /* se adapta al ancho del contenedor */
+			border-radius: 10px; /* bordes redondeados */
+			box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra suave */
+			transition: transform 0.3s ease; /* animación al pasar el mouse */
+		}
+		.respuesta-img:hover {
+			transform: scale(1.05); /* efecto zoom al pasar el mouse */
 		}
 	</style>
 </head>
@@ -51,37 +63,37 @@
 		<li>
 			<p><strong>a.- ¿Qué tipo de servicio es SSH?</strong></p>
 			<p>RESPUESTA: SSH es un servicio de red que permite la conexión remota segura entre dos sistemas, proporcionando cifrado en la comunicación y autenticación para administrar servidores y transferir archivos.</p>
-			<img src="img/a pregunta.png" alt="Logo SSH" width="500">
+			<img src="img/a pregunta.png" alt="Logo SSH" class="respuesta-img">
 		</li>
 		<li>
 			<p><strong>b.- ¿De qué dos maneras podemos autenticarnos en un servidor SSH?</strong></p>
 			<p>RESPUESTA: Podemos autenticarnos mediante contraseña (password) o mediante claves públicas/privadas (public key authentication).</p>
-			<img src="img/b pregunta.png" alt="Logo SSH" width="500">
+			<img src="img/b pregunta.png" alt="Autenticación SSH" class="respuesta-img">
 		</li>
 		<li>
 			<p><strong>c.- ¿Qué es la autenticación interactiva mediante teclado?</strong></p>
 			<p>RESPUESTA: Es el método en el que el usuario introduce manualmente su contraseña en el momento de la conexión, validando su identidad de forma directa.</p>
-			<img src="img/c pregunta.png" alt="Logo SSH" width="500">
+			<img src="img/c pregunta.png" alt="Teclado SSH" class="respuesta-img">
 		</li>
 		<li>
 			<p><strong>c.- ¿Qué diferencias hay entre ellas?</strong></p>
 			<p>RESPUESTA: La autenticación por contraseña depende de que el usuario recuerde y escriba su clave, mientras que la autenticación por llave pública utiliza un par de claves criptográficas, donde la privada permanece en el cliente y la pública se guarda en el servidor. La segunda es más segura y difícil de vulnerar.</p>
-			<img src="img/c2 pregunta.png" alt="Logo SSH" width="500">
+			<img src="img/c2 pregunta.png" alt="Comparación autenticación" class="respuesta-img">
 		</li>
 		<li>
 			<p><strong>d.- ¿Cuál es mejor? ¿Por qué?</strong></p>
 			<p>RESPUESTA: La autenticación mediante claves públicas es mejor porque ofrece mayor seguridad, evita ataques de fuerza bruta y permite automatizar conexiones sin necesidad de introducir contraseñas.</p>
-			<img src="img/d pregunta.png" alt="Logo SSH" width="500">
+			<img src="img/d pregunta.png" alt="Llaves SSH" class="respuesta-img">
 		</li>
 		<li>
 			<p><strong>e.- ¿Qué significan las siglas SSH?</strong></p>
 			<p>RESPUESTA: SSH significa <em>Secure Shell</em>, es un protocolo de red que permite la comunicación segura y remota entre computadoras a través de una red no segura.</p>
-			<img src="img/e pregunta.png" alt="Logo SSH" width="500">
+			<img src="img/e pregunta.png" alt="Secure Shell" class="respuesta-img">
 		</li>
 		<li>
 			<p><strong>f.- ¿Para qué puede ser usado SSH?</strong></p>
 			<p>RESPUESTA: SSH puede usarse para administrar servidores de forma remota, transferir archivos de manera segura (con SCP o SFTP), crear túneles cifrados, ejecutar comandos en sistemas remotos y proteger comunicaciones en redes inseguras.</p>
-			<img src="img/f pregunta.png" alt="Logo SSH" width="500">
+			<img src="img/f pregunta.png" alt="Uso SSH" class="respuesta-img">
 		</li>
 	</ol>
 </body>
